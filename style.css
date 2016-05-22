@@ -1,0 +1,311 @@
+/*
+Theme Name: Locus 2016
+Author: Frozen Helium
+Description: A theme for Locus 2016
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: locus
+*/
+
+
+@import url('bootstrap/css/bootstrap.min.css');
+
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', 'Ubuntu', sans-serif;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    outline: none;
+}
+
+hr{
+    margin: 50px 5px;
+}
+
+#header-section .site-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 90%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#header-section .title{
+    font-size: 8em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+#header-section .title .year{
+    font-size: 0.8em;
+    vertical-align: top;
+    margin-left: 16px;
+    color: #3498db;
+}
+#header-section .extra{
+    font-size: 2.2em;
+    letter-spacing: 0.15em;
+}
+#header-menu{
+    text-align: right;
+    padding: 30px 0px;
+}
+#header-menu .menu-item{
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#header-menu .menu-item:hover{
+    color: #f0f0f0;
+}
+#countdown-timer{
+    font-weight: 300;
+
+}
+.time-element{
+    font-size: 6em;
+    padding: 24px;
+}
+.time-element .label{
+    font-size: 0.6em;
+    font-weight: 300;
+    padding:0;
+}
+#title{
+    width: 600px;
+}
+@media (max-width: 991px){
+    hr{
+        margin: 20px 5px;
+    }
+    #header-section .title{
+        font-size: 5em;
+    }
+    #header-section .extra{
+        font-size: 1.5em;
+    }
+    #header-menu{
+        padding: 10px 0px;
+        text-align: center;
+    }
+    #header-menu .menu-item{
+        font-size: 1em;
+        padding: 0px 15px;
+    }
+    .time-element{
+        font-size: 3em;
+        padding: 12px;
+    }
+    #title{
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 500px){
+    #header-section .title{
+        font-size: 3em;
+    }
+    #header-section .extra{
+        font-size: 1em;
+    }
+    .time-element{
+        font-size: 1.5em;
+        padding: 6px;
+    }
+    #title{
+        width: 80%;
+    }
+
+}
+
+
+#categories .title, #about .title, #members .title, #sponsors .title{
+    padding-bottom: 60px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: #203186;
+}
+#about{
+    font-size: 1.2em;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.category{
+    padding: 10px;
+    text-align: center;
+}
+.category .cat-logo{
+    font-weight: 300;
+    font-size: 6em;
+
+}
+.category .cat-header{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.category .cat-description{
+    color: #969696;
+}
+
+
+#footer-section{
+    margin-top: 50px;
+}
+#theme{
+    text-align: center;
+    font-size: 3em;
+    padding: 50px;
+}
+
+.member{
+    min-height: 150px;
+}
+.member .avatar img{
+    width: 100%;
+}
+.member .avatar{
+    font-size: 3em;
+    text-align: center;
+}
+.member .info{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.member .info .name{
+    font-size: 1.2em;
+}
+.member .info .extra{
+    color: #aaa;
+}
+
+
+#map{
+    height: 300px;
+}
+
+#footer-menu .menu-item{
+    padding: 10px 24px;
+}
+#footer-menu a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#contact-info{
+    margin-bottom: 50px;
+}
+#contact-info .title, #social .title{
+    text-transform: uppercase;
+    color: #969696;
+    font-weight: bold;
+}
+#contact-info .country-code{
+    margin-right: 10px;
+}
+#contact-info div{
+    line-height: 1.5;
+    font-size: 1.2;
+    color: #fff;
+    margin-bottom: 16px;
+}
+#contact-info a{
+    color: #fff;
+}
+#contact-info .fa{
+    width: 30px;
+}
+
+#social{
+    margin-bottom: 20px;
+}
+
+#social .item{
+    display: inline-block;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 16px;
+}
+#social .item a{
+    color: #fff;
+}
+
+.sponsor{
+    display: inline-block;
+}
+.sponsor img{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 991px){
+    #categories .title, #about .title, #members .title, #sponsors .title{
+        padding-bottom: 24px;
+        font-size: 2em;
+    }
+    #about{
+        font-size: 1em;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .category .cat-logo{
+        font-size: 4em;
+    }
+    .category .cat-header{
+        font-size: 1.2em;
+    }
+
+    .member{
+        min-height: 100px;
+        padding: 24px;
+    }
+    .member .avatar{
+        padding: 6px;
+        font-size: 2em;
+    }
+
+    .sponsor{
+        padding: 10px;
+    }
+
+    #footer-menu{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    #social{
+        text-align: center;
+        padding: 24px;
+    }
+    #contact-info{
+        padding: 24px;
+        margin-bottom: 0;
+    }
+    #social .title, #contact-info .title{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+
+}
